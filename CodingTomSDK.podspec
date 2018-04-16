@@ -6,6 +6,12 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
+
+# pod lib lint
+# pod spec lint
+# pod repo push TomPodRepos CodingTomSDK.podspec --verbose
+
+
 Pod::Spec.new do |s|
   s.name             = 'CodingTomSDK'
   s.version          = '0.1.0'
