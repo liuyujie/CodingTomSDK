@@ -7,6 +7,7 @@
 //
 
 #import "TMViewController.h"
+#import <CodingTomSDK/CodingTom.h>
 
 @interface TMViewController ()
 

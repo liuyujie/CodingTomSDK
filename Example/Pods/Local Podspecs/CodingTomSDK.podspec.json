@@ -1,22 +1,52 @@
 {
   "name": "CodingTomSDK",
   "version": "0.1.0",
-  "summary": "A short description of CodingTomSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/liuyujieemail@163.com/CodingTomSDK",
+  "summary": "A Pod lib For Self By CodingTom name CodingTomSDK.",
+  "description": "这是一个私人库：https://github.com/liuyujie/TomSpecs.git\n例子来源:https://github.com/ApterKingRepo/Verify-SwiftOC3rd.git",
+  "homepage": "https://github.com/liuyujie/CodingTomSDK.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "liuyujieemail@163.com": "liu.yujie@xcar.com.cn"
+    "CodingTom": "liuyujieemail@163.com"
   },
   "source": {
-    "git": "https://github.com/liuyujieemail@163.com/CodingTomSDK.git",
+    "git": "https://github.com/liuyujie/CodingTomSDK.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CodingTomSDK/Classes/**/*"
+  "ios": {
+    "frameworks": [
+      "Foundation",
+      "UIKit",
+      "Security",
+      "CoreFoundation",
+      "CoreText",
+      "CoreGraphics",
+      "CoreImage",
+      "QuartzCore",
+      "ImageIO",
+      "AssetsLibrary",
+      "Accelerate",
+      "MobileCoreServices",
+      "SystemConfiguration"
+    ],
+    "vendored_frameworks": "CodingTomSDK/Framework/*.framework"
+  },
+  "source_files": [
+    "CodingTomSDK/Classes/**/*",
+    "CodingTomSDK/Framework/*.framework/Headers/**.h"
+  ],
+  "public_header_files": [
+    "CodingTomSDK/Classes/**/*.h",
+    "CodingTomSDK/Framework/*.framework/Headers/*.h"
+  ],
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(PODS_ROOT)/CodingTomSDK/Framework/*.framework/Headers",
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "preserve_paths": "CodingTomSDK/Framework/*.framework"
 }

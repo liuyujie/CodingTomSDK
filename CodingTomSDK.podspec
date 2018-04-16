@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   
   s.public_header_files = 'CodingTomSDK/Classes/**/*.h', 'CodingTomSDK/Framework/*.framework/Headers/*.h'
   
-  s.vendored_frameworks =  'CodingTomSDK/Framework/*.framework'
+  s.ios.vendored_frameworks =  'CodingTomSDK/Framework/*.framework'
   
   # s.vendored_libraries = 'CodingTomSDK/ThirdLib/*.a'
   # s.preserve_paths = 'CodingTomSDK/Framework/*.framework', 'CodingTomSDK/ThirdLib/*.a'
