@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CodingTomSDK_Example' do
+  pod 'CodingTomSDK', :path => '../'
+
+  target 'CodingTomSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
