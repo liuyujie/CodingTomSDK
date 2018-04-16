@@ -5,12 +5,9 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
-
-
 # pod lib lint
 # pod spec lint
 # pod repo push TomPodRepos CodingTomSDK.podspec --verbose
-
 
 Pod::Spec.new do |s|
   s.name             = 'CodingTomSDK'
@@ -24,10 +21,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                        这是一个私人库，个人项目专用，用来测试一些东西，希望别人不用理会，
-                        https://github.com/liuyujie/TomSpecs.git
-                        例子来源:
-                        https://github.com/ApterKingRepo/Verify-SwiftOC3rd.git
+                        这是一个私人库：https://github.com/liuyujie/TomSpecs.git
+                        例子来源:https://github.com/ApterKingRepo/Verify-SwiftOC3rd.git
                         DESC
 
   s.homepage         = 'https://github.com/liuyujie/CodingTomSDK.git'
@@ -42,9 +37,12 @@ Pod::Spec.new do |s|
   s.ios.frameworks = 'Foundation', 'UIKit','Security','CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
   
   s.source_files = 'CodingTomSDK/Classes/**/*'
+  
   s.vendored_frameworks =  'CodingTomSDK/Framework/*.framework'
+  
   # s.vendored_libraries = 'CodingTomSDK/ThirdLib/*.a'
   # s.preserve_paths = 'CodingTomSDK/Framework/*.framework', 'CodingTomSDK/ThirdLib/*.a'
+  
   s.preserve_paths = 'CodingTomSDK/Framework/*.framework'
 
 end
