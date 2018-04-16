@@ -22,7 +22,7 @@ pod 'CodingTomSDK'
 
 ## Author
 
-liuyujieemail@163.com, liu.yujie@xcar.com.cn
+liuyujieemail@163.com
 
 ## License
 
