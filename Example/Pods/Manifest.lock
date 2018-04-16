@@ -1,0 +1,16 @@
+PODS:
+  - CodingTomSDK (0.1.0)
+
+DEPENDENCIES:
+  - CodingTomSDK (from `../`)
+
+EXTERNAL SOURCES:
+  CodingTomSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CodingTomSDK: c9322dd76e4f178c8c328e634ca3264b0874ffbb
+
+PODFILE CHECKSUM: 0b42226e21e781784822e6141ed33bedac24daff
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,6 @@
+framework module Pods_CodingTomSDK_Example {
+  umbrella header "Pods-CodingTomSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module CodingTomSDK {
+  umbrella header "CodingTomSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

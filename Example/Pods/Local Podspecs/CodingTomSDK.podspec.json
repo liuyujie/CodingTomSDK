@@ -1,0 +1,22 @@
+{
+  "name": "CodingTomSDK",
+  "version": "0.1.0",
+  "summary": "A short description of CodingTomSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/liuyujieemail@163.com/CodingTomSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liuyujieemail@163.com": "liu.yujie@xcar.com.cn"
+  },
+  "source": {
+    "git": "https://github.com/liuyujieemail@163.com/CodingTomSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CodingTomSDK/Classes/**/*"
+}

@@ -21,16 +21,24 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/liuyujieemail@163.com/CodingTomSDK'
+  s.homepage         = 'https://github.com/liuyujie/CodingTomSDK.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'liuyujieemail@163.com' => 'liu.yujie@xcar.com.cn' }
-  s.source           = { :git => 'https://github.com/liuyujieemail@163.com/CodingTomSDK.git', :tag => s.version.to_s }
+  s.author           = { 'CodingTom' => 'liuyujieemail@163.com' }
+  s.source           = { :git => 'https://github.com/liuyujie/CodingTomSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  
+  s.ios.frameworks = 'Foundation', 'UIKit','Security','CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
+  s.ios.vendored_frameworks = 'Vendor/WebP.framework'
+  
+end
+
 
   s.source_files = 'CodingTomSDK/Classes/**/*'
+  s.vendored_frameworks =  'CodingTom/Framework/*.framework'
+
   
   # s.resource_bundles = {
   #   'CodingTomSDK' => ['CodingTomSDK/Assets/*.png']
