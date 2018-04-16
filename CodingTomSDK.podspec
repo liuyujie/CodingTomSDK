@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CodingTomSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CodingTomSDK.'
+  s.summary          = 'A Pod lib For Self By CodingTom name CodingTomSDK.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+                        这是一个私人库，个人项目专用，用来测试一些东西，希望别人不用理会，
+                        https://github.com/liuyujie/TomSpecs.git
+                        例子来源:
+                        https://github.com/ApterKingRepo/Verify-SwiftOC3rd.git
+                        DESC
 
   s.homepage         = 'https://github.com/liuyujie/CodingTomSDK.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -31,20 +34,11 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
   
   s.ios.frameworks = 'Foundation', 'UIKit','Security','CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
-  s.ios.vendored_frameworks = 'Vendor/WebP.framework'
   
-end
-
-
   s.source_files = 'CodingTomSDK/Classes/**/*'
-  s.vendored_frameworks =  'CodingTom/Framework/*.framework'
+  s.vendored_frameworks =  'CodingTomSDK/Framework/*.framework'
+  # s.vendored_libraries = 'CodingTomSDK/ThirdLib/*.a'
+  # s.preserve_paths = 'CodingTomSDK/Framework/*.framework', 'CodingTomSDK/ThirdLib/*.a'
+  s.preserve_paths = 'CodingTomSDK/Framework/*.framework'
 
-  
-  # s.resource_bundles = {
-  #   'CodingTomSDK' => ['CodingTomSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
