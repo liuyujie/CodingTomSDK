@@ -37,7 +37,8 @@ Pod::Spec.new do |s|
   s.ios.frameworks = 'Foundation', 'UIKit','Security','CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
   
   s.source_files = 'CodingTomSDK/Classes/**/*','CodingTomSDK/Framework/*.framework/Headers/**.h'
-
+  
+  s.public_header_files = 'CodingTomSDK/Classes/**/*.h', 'CodingTomSDK/Framework/*.framework/Headers/*.h'
   
   s.vendored_frameworks =  'CodingTomSDK/Framework/*.framework'
   
