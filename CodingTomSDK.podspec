@@ -36,19 +36,19 @@ Pod::Spec.new do |s|
   
   s.ios.frameworks = 'Foundation', 'UIKit','Security','CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
   
-  s.source_files = 'CodingTomSDK/Classes/**/*','CodingTomSDK/Framework/*.framework/Headers/**.h'
+  #s.source_files = 'CodingTomSDK/Classes/**/*'
   
-  s.public_header_files = 'CodingTomSDK/Classes/**/*.h', 'CodingTomSDK/Framework/*.framework/Headers/*.h'
+  #s.public_header_files = 'CodingTomSDK/Classes/**/*.h'
   
-  s.ios.vendored_frameworks =  'CodingTomSDK/Framework/*.framework'
-  
+  s.libraries = 'z', 'sqlite3'
   # s.vendored_libraries = 'CodingTomSDK/ThirdLib/*.a'
   # s.preserve_paths = 'CodingTomSDK/Framework/*.framework', 'CodingTomSDK/ThirdLib/*.a'
-  s.pod_target_xcconfig = {
+  # s.pod_target_xcconfig = {
       #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/Verify-SwiftOC3rd/Vendors',
-      'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/CodingTomSDK/Framework/*.framework/Headers',
-      'OTHER_LDFLAGS' => '-ObjC'
-  }
-  s.preserve_paths = 'CodingTomSDK/Framework/*.framework'
+      #   'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/CodingTomSDK/Framework/*.framework/Headers',
+      #   'OTHER_LDFLAGS' => '-ObjC'
+      #}
+  s.ios.vendored_frameworks =  'CodingTomSDK/Framework/*.framework'
+  #s.preserve_paths = 'CodingTomSDK/Framework/*.framework'
 
 end

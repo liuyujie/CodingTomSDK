@@ -36,17 +36,8 @@
     ],
     "vendored_frameworks": "CodingTomSDK/Framework/*.framework"
   },
-  "source_files": [
-    "CodingTomSDK/Classes/**/*",
-    "CodingTomSDK/Framework/*.framework/Headers/**.h"
-  ],
-  "public_header_files": [
-    "CodingTomSDK/Classes/**/*.h",
-    "CodingTomSDK/Framework/*.framework/Headers/*.h"
-  ],
-  "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "$(PODS_ROOT)/CodingTomSDK/Framework/*.framework/Headers",
-    "OTHER_LDFLAGS": "-ObjC"
-  },
-  "preserve_paths": "CodingTomSDK/Framework/*.framework"
+  "libraries": [
+    "z",
+    "sqlite3"
+  ]
 }
