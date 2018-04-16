@@ -44,7 +44,11 @@ Pod::Spec.new do |s|
   
   # s.vendored_libraries = 'CodingTomSDK/ThirdLib/*.a'
   # s.preserve_paths = 'CodingTomSDK/Framework/*.framework', 'CodingTomSDK/ThirdLib/*.a'
-  
+  s.pod_target_xcconfig = {
+      #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/Verify-SwiftOC3rd/Vendors',
+      'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/CodingTomSDK/Framework/*.framework/Headers',
+      'OTHER_LDFLAGS' => '-ObjC'
+  }
   s.preserve_paths = 'CodingTomSDK/Framework/*.framework'
 
 end
