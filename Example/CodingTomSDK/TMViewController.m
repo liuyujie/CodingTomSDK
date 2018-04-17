@@ -12,7 +12,10 @@
 #import <Masonry/Masonry.h>
 
 @interface TMViewController ()
-
+{
+    UILayoutGuide *guide;
+    
+}
 @end
 
 @implementation TMViewController
@@ -21,6 +24,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    guide = [[UILayoutGuide alloc] init];
+    
+    [self.view addLayoutGuide:guide];
+    
+    
+    UILabel *label = [[UILabel alloc] init];
+    
+}
+
+
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    NSLog(@"%@", NSStringFromCGRect(guide.layoutFrame));
+
 }
 
 - (void)didReceiveMemoryWarning
